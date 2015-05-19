@@ -1,0 +1,11 @@
+<tr {$status|default:''}>
+    <td hidden>{$exp.id}</td>
+    <td>{$exp.title}</td>
+    <td><button name="show" value="{$exp.id}" class="btn btn-info btn-xs" formaction="index.php">i</button></td>
+    <td>{$exp.seller_name}</td>
+    <td>{$exp.price}</td>
+    <td>{$exp.time}</td>
+    <td><a name="delete" value="{$exp.id}" class="delete btn btn-danger btn-xs">X</a></td>
+    <!--<td><button name="delete" value="{$exp.id}" class="delete btn btn-danger btn-xs">X</button></td>-->
+    
+</tr>
