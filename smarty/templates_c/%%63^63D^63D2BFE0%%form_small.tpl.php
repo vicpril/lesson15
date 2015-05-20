@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.28, created on 2015-05-20 09:19:39
+<?php /* Smarty version 2.6.28, created on 2015-05-20 10:53:56
          compiled from form_small.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'default', 'form_small.tpl', 22, false),array('function', 'html_options', 'form_small.tpl', 57, false),)), $this); ?>
@@ -98,7 +98,7 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'default', '
         <label class="text-left">Цена</label> 
         <div class="">
             <div class="input-group">
-                <input class="form-control" type="text" maxlength="9" value="<?php echo ((is_array($_tmp=@$this->_tpl_vars['name']['price'])) ? $this->_run_mod_handler('default', true, $_tmp, '0') : smarty_modifier_default($_tmp, '0')); ?>
+                <input class="form-control" type="text" maxlength="9" value="<?php echo ((is_array($_tmp=@$this->_tpl_vars['name']['price'])) ? $this->_run_mod_handler('default', true, $_tmp, '') : smarty_modifier_default($_tmp, '')); ?>
 " name="price">
                 <span class="input-group-addon">.руб</span>
             </div>

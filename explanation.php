@@ -46,13 +46,14 @@ class Explanation {
         return $this->id;
     }
 
-    public function deleteExp() {
+    public static function deleteExp($id) {
         global $mysqli;
-        $id = $this->id;
         $del = $mysqli->selectrow("DELETE FROM explanations WHERE id = ?d", $id);
-//        if ($del > 0) {
-//            unset($instance->board[$id]);
-//        }
+        if ($del > 0) {
+            // сообщение при успешном удалении
+            $mess = "Объявление успешно удалено.";
+        }
+        return $mess;
     }
 
     // Обработка входящего объявления
