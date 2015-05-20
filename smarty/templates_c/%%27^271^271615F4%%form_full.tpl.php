@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.28, created on 2015-05-19 14:47:47
+<?php /* Smarty version 2.6.28, created on 2015-05-20 09:19:39
          compiled from form_full.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'default', 'form_full.tpl', 20, false),array('function', 'html_options', 'form_full.tpl', 55, false),)), $this); ?>
@@ -96,7 +96,7 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'default', '
         <label class="col-xs-4 text-right">Цена</label> 
         <div class="col-xs-8">
             <div class="input-group">
-                <input class="form-control" type="text" maxlength="9" value="<?php echo ((is_array($_tmp=@$this->_tpl_vars['name']['price'])) ? $this->_run_mod_handler('default', true, $_tmp, '0') : smarty_modifier_default($_tmp, '0')); ?>
+                <input class="form-control" type="text" maxlength="9" value="<?php echo ((is_array($_tmp=@$this->_tpl_vars['name']['price'])) ? $this->_run_mod_handler('default', true, $_tmp, '') : smarty_modifier_default($_tmp, '')); ?>
 " name="price">
                 <span class="input-group-addon">.00</span>
             </div>
@@ -113,7 +113,7 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'default', '
                 <div>
                     <input class="btn btn-info" type="submit" name="button_add" value="Изменить объявление" formaction="index.php?id=<?php echo $this->_tpl_vars['show']; ?>
 ">
-                    <button class="btn btn-default" formaction="index.php">Отмена</button>
+                    <button class="cancel btn btn-default" formaction="index.php">Отмена</button>
                 </div>
             <?php endif; ?>
         </div>

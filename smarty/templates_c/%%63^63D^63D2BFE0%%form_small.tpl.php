@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.28, created on 2015-05-19 14:47:47
+<?php /* Smarty version 2.6.28, created on 2015-05-20 09:19:39
          compiled from form_small.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'default', 'form_small.tpl', 22, false),array('function', 'html_options', 'form_small.tpl', 57, false),)), $this); ?>
@@ -115,7 +115,7 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'default', '
             <div class="">
                 <input class="btn btn-info" type="submit" name="button_add" value="Изменить объявление" formaction="index.php?id=<?php echo $this->_tpl_vars['show']; ?>
 ">
-                <button class="btn btn-default" formaction="index.php">Отмена</button>
+                <button class="cancel btn btn-default" formaction="index.php">Отмена</button>
             </div>
         <?php endif; ?>
 

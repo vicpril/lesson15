@@ -87,7 +87,7 @@
         <label class="text-left">Цена</label> 
         <div class="">
             <div class="input-group">
-                <input class="form-control" type="text" maxlength="9" value="{$name.price|default:'0'}" name="price">
+                <input class="form-control" type="text" maxlength="9" value="{$name.price|default:''}" name="price">
                 <span class="input-group-addon">.руб</span>
             </div>
         </div>  
@@ -102,7 +102,7 @@
         {else}
             <div class="">
                 <input class="btn btn-info" type="submit" name="button_add" value="Изменить объявление" formaction="index.php?id={$show}">
-                <button class="btn btn-default" formaction="index.php">Отмена</button>
+                <button class="cancel btn btn-default" formaction="index.php">Отмена</button>
             </div>
         {/if}
 

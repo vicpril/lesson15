@@ -21,10 +21,4 @@ if (isset($_POST['button_add'])) {
     $exp->save();
 }
 
-$instance = Notice_board::instance()->getAllExpFromDB();
-
-if (isset($_GET['delete']) && isset($instance->board[$_GET['delete']])) {
-    $instance->board[$_GET['delete']]->deleteExp($instance);
-}
-
-$instance->getListOfExplanations()->display();
+$instance = Notice_board::instance()->getAllExpFromDB()->getListOfExplanations()->display();

@@ -4,7 +4,7 @@
         <table class="table table-hover">
             <thead >
                 <tr>
-                    <th hidden>Id</th>
+{*                    <th hidden>Id</th>*}
                     <th>Название</th>
                     <th></th>
                     <th>Имя автора</th>

@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.28, created on 2015-05-18 12:27:05
+<?php /* Smarty version 2.6.28, created on 2015-05-20 09:28:47
          compiled from table.tpl */ ?>
 <h2 class="sub-header text-center">Доска объявлений</h2>
 <form>
@@ -6,7 +6,6 @@
         <table class="table table-hover">
             <thead >
                 <tr>
-                    <th hidden>Id</th>
                     <th>Название</th>
                     <th></th>
                     <th>Имя автора</th>
